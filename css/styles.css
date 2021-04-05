@@ -12,7 +12,7 @@ header {
   border:0px;
   font-size: 20px;
   text-shadow: 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
   position: relative;
@@ -22,20 +22,47 @@ body {
     flex-flow: row wrap;
   width: 85%;
   height: auto;
-  margin: 0 auto;
+  margin: 1.5% auto;
   padding: 25px 50px;
   background-color: #a39f9f;
   border:0px;
   font-size: 16px;
   text-shadow:0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-li, input {
+label, input, button {
   margin: 5px;
 }
-.myList {
+a:link {
+  color:black;
+  text-decoration: none;
+}
+a:visited {
+  color: #dad0d0;
+}
+a:active {
+  color: #af5b5b
+}
+input {
   position: relative;
-  display: block;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px 15px;
+  border:0px;
+  font-size: 16px;
+  text-shadow:0px;
+}
+.mylabel {
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
   width: 85%;
   height: auto;
   margin: 0 auto;
@@ -44,8 +71,6 @@ li, input {
   border:0px;
   font-size: 16px;
   text-shadow:0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  list-style-type: none;
 }
 .containerOne {
   position: relative;
@@ -53,7 +78,6 @@ li, input {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    align-content: center;
   width: 85%;
   height: auto;
   margin: 0 auto;
@@ -62,7 +86,6 @@ li, input {
   border:0px;
   font-size: 16px;
   text-shadow:0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .myH2 {
   position: relative;
@@ -79,5 +102,54 @@ li, input {
   border:0px;
   font-size: 18spx;
   text-shadow:0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.myButton{
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: row wrap;
+    align-content: center;
+  width: 50%;
+  height: auto;
+  margin: 10px auto;
+  padding: 10px 10px;
+  background-color: #b47d7d;
+  border:1px;
+  font-size: 16px;
+  text-shadow:0px;
+}
+.myButton:hover {
+  background-color: #9c7676;
+}
+.myLinks{
+  position:relative;
+  display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: row wrap;
+    align-content: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 5px 5px;
+  border:1px;
+  font-size: 16px;
+  text-shadow:0px;
+}
+.myDiv {
+  position:relative;
+  display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: row wrap;
+    align-content: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 5px 5px;
+  border:1px;
+  font-size: 16px;
+  text-shadow:0px;
+}
+
