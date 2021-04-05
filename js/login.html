@@ -22,25 +22,29 @@
       <label for="email">
         Email
       </label>
-      <input required type="email">
+      <input required type="email" name="email">
       <label for="password">
         Password
       </label>
-      <input required type="password">
-    <div class="myDiv">
-      Don't have an account?
-        <div class="myLinks">
-          <a href="register.html">
-            REGISTER
-          </a>
-        </div>
+      <input required type="password" name="password">
+      <div class="myDiv">
+        Don't have an account?
+          <div class="myLinks">
+            <a href="register.html">
+              REGISTER
+            </a>
+          </div>
       </div>
       <div>
         <input class="myButton" type="submit" value="Log In">
       </div>
     </form>
   </div>
-  <div class="Error" style="display:none">
+  <div class="errorLoginDiv">
+    <span id="errorL1">
+    </span>
+    <span id="errorL2">
+    </span>
   </div>
   <script src="login.js">
   </script>
