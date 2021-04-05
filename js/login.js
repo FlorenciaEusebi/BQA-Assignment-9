@@ -1,21 +1,19 @@
-/* (document).ready(function () {
-  (".myButton").click(function (){
-    var email = (".myEmail").val();
-    var fullName = (".myFullName").val();
-    var password = (".myPassword").val();
-    var confirmPassword = (".myConfirmPassword").val();
-
-      if (email ==""){
-       (".Errors").html ("Email is required");
-      (".errorDiv").css ("Display","Block");
-        alert ("no");
-        return false;
-      }
-      if (fullName ==""){
-       (".Errors").html ("Full name is required");
-       (".errorDiv").css ("Display","Block");
-        alert ("no2");
-        return false;
-      }
-})
-}); */
+function validateLoginForm(){
+  var email = document.myLabelForm.email.value;
+  var password = document.myLabelForm.password.value;
+  if (email == null || email ==""){
+    ErrorL1.innerHTML = "Email is required";
+    return false;
+  } else {
+    ErrorL1.innerHTML = "";}
+  if (password == null || password ==""){
+    ErrorL2.innerHTML = "Password is required";
+    return false;
+  } else {
+    ErrorL2.innerHTML = "";}
+  if (password != null || email != null){
+    SuccessL.innerHTML = "Success";
+    return false;
+  } else {
+    SuccessL.innerHTML = "";}
+}

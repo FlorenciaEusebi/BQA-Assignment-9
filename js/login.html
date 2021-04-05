@@ -18,12 +18,12 @@
     </div>
   </header>
   <div class="containerOne">
-    <form>
-      <label for="email">
+    <form name="myLoginForm" onsubmit = "return validateLoginForm()">
+      <label for="email" class= "myLabel">
         Email
       </label>
       <input required type="email" name="email">
-      <label for="password">
+      <label for="password" class= "myLabel">
         Password
       </label>
       <input required type="password" name="password">
@@ -44,6 +44,8 @@
     <span id="errorL1">
     </span>
     <span id="errorL2">
+    </span>
+    <span id="SuccessL">
     </span>
   </div>
   <script src="login.js">
