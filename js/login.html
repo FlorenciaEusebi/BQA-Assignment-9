@@ -18,15 +18,15 @@
     </div>
   </header>
   <div class="containerOne">
-    <form name="myLoginForm" onsubmit = "return validateLoginForm()" action="/foo" novalidate>
+    <form class="loginForm" name="myLoginForm" onsubmit = "return validateLoginForm()" action="/foo" novalidate>
       <label for="email" class= "myLabel">
         Email
       </label>
-      <input required type="email" name="email">
+      <input class= "loginInput" required type="email" name="email">
       <label for="password" class= "myLabel">
         Password
       </label>
-      <input required type="password" name="password">
+      <input class= "loginInput" required type="password" name="password">
       <div class="myDiv">
         Don't have an account?
           <div class="myLinks">
@@ -50,5 +50,7 @@
   </div>
   <script src="login.js">
   </script>
+  <div class="validateDom">
+  </div>
 </body>
 </html>
