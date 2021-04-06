@@ -4,27 +4,27 @@ function validateRegisterForm(){
   var password = document.myRegisterForm.password.value;
   var confirmPassword = document.myRegisterForm.confirmPassword.value;
   if (email == null || email ==""){
-    Error1.innerHTML = "Email is required";
+    Error1.innerHTML = "Email is required.";
     return false;
   } else {
     Error1.innerHTML = "";}
   if (fullName == null || fullName ==""){
-    Error2.innerHTML = "Full name is required";
+    Error2.innerHTML = "Full name is required.";
     return false;
   } else {
     Error2.innerHTML = "";}
   if (password == null || password ==""){
-    Error3.innerHTML = "Password is required";
+    Error3.innerHTML = "Password is required.";
     return false;
   } else {
     Error3.innerHTML = "";}
   if (confirmPassword == null || confirmPassword ==""){
-    Error4.innerHTML = "Please confirm password";
+    Error4.innerHTML = "Please confirm password.";
     return false;
   } else {
     Error4.innerHTML = "";}
   if (confirmPassword != password){
-    Error5.innerHTML = "Password does not match";
+    Error5.innerHTML = "Password does not match.";
     return false;
   } else {
     Error5.innerHTML = "";}

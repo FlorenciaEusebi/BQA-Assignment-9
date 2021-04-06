@@ -1,19 +1,22 @@
 function validateLoginForm(){
-  var email = document.myLabelForm.email.value;
-  var password = document.myLabelForm.password.value;
-  if (email == null || email ==""){
-    ErrorL1.innerHTML = "Email is required";
-    return false;
-  } else {
-    ErrorL1.innerHTML = "";}
-  if (password == null || password ==""){
-    ErrorL2.innerHTML = "Password is required";
-    return false;
-  } else {
-    ErrorL2.innerHTML = "";}
-  if (password != null || email != null){
-    SuccessL.innerHTML = "Success";
-    return false;
-  } else {
-    SuccessL.innerHTML = "";}
+  var email = document.forms ["myLoginForm"]["email"];
+  var password = document.forms["myLoginForm"]["password"];
+    if (email.value == "") {
+      errorL1.innerHTML = "Email is required.";
+      email.focus();
+      return false;
+    }
+    if (password.value == "") {
+        errorL2.innerHTML= "Please enter your password.";
+        password.focus();
+        return false;
+    }
+    if (password != null || email != null){
+        successL.innerHTML = "Success";
+        return false;
+    }
+    else {
+        successL.innerHTML = "";
+      }
+        return true;
 }
