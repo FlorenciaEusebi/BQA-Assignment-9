@@ -1,5 +1,5 @@
  var validateDiv = document.querySelector(".validateDom");
- var validContent = "Form content results:";
+ var validContent = "Login form content results:";
 
  var validateDom = function () {
    if (document.querySelector (".loginForm")) {
@@ -67,7 +67,7 @@ var anchorTag = function () {
 var finalValidation = function () {
   if ((validateDom = true) && (numberOfFields = true) && (inputsRequired = true) &&
   (labelsAssociated = true) && (buttonContent = true) && (anchorTag = true)) {
-      validateDiv.textContent = validContent + " " + "Successful validation.";
+      validateDiv.textContent = validContent + " " + "Successful login validation.";
   }
 }
 

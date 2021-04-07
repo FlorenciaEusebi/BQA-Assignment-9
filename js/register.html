@@ -21,25 +21,25 @@
       <h2 class="myH2">
         Join us today!
       </h2>
-      <form name="myRegisterForm" onsubmit = "return validateRegisterForm()" action="/foo" novalidate>
+      <form class= "registerForm" name="myRegisterForm" onsubmit = "return validateRegisterForm()" action="/foo" novalidate>
         <label for="email" class="myLabel">
           Email
         </label>
-        <input required type="email" name="email">
+        <input class= "registerInput" required type="email" name="email">
         <label for="fullName" class="myLabel">
           Full Name
         </label>
-        <input required type="text" name="fullName">
+        <input class= "registerInput"  required type="text" name="fullName">
         <label for="password" class="myLabel">
           Password
         </label>
-        <input required type="password" name="password">
+        <input class= "registerInput"  required type="password" name="password">
         <label for="confirmPassword" class="myConfirmPassword">
           Confirm Password
         </label>
-        <input required type="password" name="confirmPassword">
+        <input class= "registerInput" required type="password" name="confirmPassword">
         <div>
-          <button class="myButton" type="reset">
+          <button id="myResetButton" class="myButton" type="reset">
             Clear
           </button>
           <button class="myButton" type="submit">

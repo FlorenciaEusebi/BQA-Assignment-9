@@ -1,3 +1,78 @@
+var validateDiv = document.querySelector(".validateDom");
+var validContent = "Register form content results:";
+
+ var validateDom = function () {
+   if (document.querySelector (".registerForm")) {
+     validateDiv.append(validContent + " " + "Form exists." + " ");
+   }
+   else {
+     validateDiv.append(validContent + " " + "Form is non-existent." + " ");
+   }
+ }
+
+var numberOfFields = function () {
+  var fields = document.querySelectorAll("input");
+  var fieldsNumber = fields.length;
+  if (fieldsNumber = 4) {
+    validateDiv.append (validContent + " " + "Fields exist." + " ");
+  }
+  else {
+    validateDiv.append(validContent + " " + "Fields are non-existent." + " ");
+  }
+}
+
+var inputsRequired = function () {
+  var input = document.querySelectorAll(".registerInput").required;
+  if (input = true) {
+    validateDiv.append(validContent + " " + "Fields are required." + " ");
+  }
+  else {
+      validateDiv.append(validContent + " " + "Not all fields are required." + " ");
+    }
+}
+
+var labelsAssociated = function () {
+  var input = document.querySelectorAll(".registerInput").name;
+  var labels = document.querySelectorAll("labels").for;
+  if (inputs === labels) {
+    validateDiv.append(validContent + " " + "Inputs are associated." + " ")
+  }
+  else {
+      validateDiv.append(validContent + " " + "Inputs are not associated." + " ");
+    }
+}
+
+var buttonContent = function () {
+  var resetButton = document.querySelector("#myResetButton").nodeValue;
+  var submitButton = document.querySelector(".myButton").nodeValue;
+  var resetValue = "Clear";
+  var submitValue = "Register";
+  if ((submitButton = submitValue) && (resetButton = resetValue)) {
+      validateDiv.append(validContent + " " + "Button content is OK" + " ");
+  }
+  else {
+      validateDiv.append(validContent + " " + "Button content is not OK" + " ");
+  }
+}
+
+var anchorTag = function () {
+  var anchor = document.querySelector("a").href;
+  var hrefExists = "login.html";
+  if (anchor = hrefExists) {
+      validateDiv.append(validContent + " " + "Anchor tag exists" + " ");
+  }
+  else {
+      validateDiv.append(validContent + " " + "Anchor tag is non-existent" + " ");
+  }
+}
+
+var finalValidation = function () {
+  if ((validateDom = true) && (numberOfFields = true) && (inputsRequired = true) &&
+  (labelsAssociated = true) && (buttonContent = true) && (anchorTag = true)) {
+      validateDiv.textContent = validContent + " " + "Successful register validation.";
+  }
+}
+
 function validateRegisterForm(){
   var email = document.myRegisterForm.email.value;
   var fullName = document.myRegisterForm.fullName.value;
